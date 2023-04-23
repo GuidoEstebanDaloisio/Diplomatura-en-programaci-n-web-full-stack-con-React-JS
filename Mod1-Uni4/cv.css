@@ -1,0 +1,58 @@
+h2{
+    color:green;
+    font-family: consolas;
+}
+
+h3{
+    color: yellow;
+    font-family: consolas;
+}
+
+p{
+    color: white;
+    font-family: consolas;
+}
+
+.ListaDeHabilidadesYContacto{
+    color: white;
+    font-family: consolas;
+}
+
+#CajaPerfil{
+    width: 700px;
+    height: 680px;
+    box-sizing: border-box;
+    margin-left: 70px;
+}
+.NombreCompleto{
+    margin-left: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#CajaProfesion{
+    width: 700px;
+    height: 300px;
+    border: 3px dashed blue;
+    box-sizing: border-box;
+    background-color: black;
+}
+#CajaEducacion{
+    width: 700px;
+    height: 195px;
+    border: 3px dashed blue;
+    box-sizing: border-box;  
+    background-color: black;
+}
+#CajaHabilidades{
+    width: 700px;
+    height: 220px;
+    border: 3px dashed blue;
+    box-sizing: border-box; 
+    background-color: black;
+}
+#CajaContacto{
+    width: 700px;
+    height: 150px;
+    border: 3px dashed blue;
+    box-sizing: border-box; 
+    background-color: black;
+}
