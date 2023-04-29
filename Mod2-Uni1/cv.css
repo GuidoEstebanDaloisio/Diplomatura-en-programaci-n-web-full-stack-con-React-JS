@@ -1,3 +1,7 @@
+/*
+font-family: 'Press Start 2P', cursive;
+*/
+
 h2{
     color:green;
     font-family: consolas;
@@ -19,32 +23,34 @@ p{
 }
 
 #CajaPerfil{
-    width: 700px;
+    width: 900px;
     height: 680px;
     box-sizing: border-box;
     margin-left: 70px;
 }
 .NombreCompleto{
-    margin-left: 60px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: -75px;
+    font-family: 'Press Start 2P', cursive;
+
 }
 #CajaProfesion{
     width: 700px;
-    height: 300px;
+    height: 200px;
     border: 3px dashed blue;
     box-sizing: border-box;
     background-color: black;
+    column-count: 2;
 }
 #CajaEducacion{
     width: 700px;
-    height: 195px;
+    height: 210px;
     border: 3px dashed blue;
     box-sizing: border-box;  
     background-color: black;
 }
 #CajaHabilidades{
     width: 700px;
-    height: 220px;
+    height: 230px;
     border: 3px dashed blue;
     box-sizing: border-box; 
     background-color: black;
@@ -55,4 +61,9 @@ p{
     border: 3px dashed blue;
     box-sizing: border-box; 
     background-color: black;
+}
+
+/*--Para uso auxiliar--*/
+#PuntoParaAcomodarColumnas{
+    color: black;
 }
