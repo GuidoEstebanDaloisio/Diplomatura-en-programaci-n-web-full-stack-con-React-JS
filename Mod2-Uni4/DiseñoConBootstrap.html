@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiseñoConBootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .jumbotron-custom {
+            max-height: 800px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Teatro "Las Máscaras"</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Espectáculos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-custom" style="background-image: url(teatro.jpg); background-size: cover;">
+        <div class="container text-center">
+            <h1 class="display-4 text-white">Bienvenidos al Teatro</h1>
+            <p class="lead text-white">Disfruta de nuestros espectáculos en vivo y sumérgete en el mundo del teatro.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Conoce más</a>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Imagen Espectáculo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Espectáculo 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dicta nisi
+                            temporibus optio ratione ipsum doloribus reprehenderit a tempore ullam. Omnis,
+                            exercitationem aspernatur. Aliquam pariatur magni deleniti placeat quae expedita!</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Imagen Espectáculo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Espectáculo 2</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, fugit.
+                            Assumenda hic sed repellendus animi nesciunt nemo eius velit maiores, delectus quisquam quod
+                            dolore facilis rem culpa voluptas temporibus recusandae!</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Imagen Espectáculo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Espectáculo 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores quos
+                            fugiat nulla exercitationem odit, aliquid animi assumenda fuga quia temporibus voluptate
+                            quidem incidunt laborum quibusdam iusto et nesciunt ab!</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Próximos eventos</h2>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Evento 1</h5>
+                            <small>Fecha: 01/06/2023</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <small>Hora: 20:00</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Evento 2</h5>
+                            <small>Fecha: 05/06/2023</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <small>Hora: 18:30</small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <h2>Testimonios</h2>
+                <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselTestimonials" data-bs-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"¡Increíble experiencia! Los actores fueron brillantes y la puesta en
+                                    escena fue
+                                    impresionante."</p>
+                                <p></p>
+                                <footer class="blockquote-footer">John Doe</footer>
+                            </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"¡Recomiendo encarecidamente este teatro! Me quedé asombrado por la
+                                    calidad de
+                                    las actuaciones y la atmósfera mágica del lugar."</p>
+                                <p></p>
+                                <footer class="blockquote-footer">Jane Smith</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
