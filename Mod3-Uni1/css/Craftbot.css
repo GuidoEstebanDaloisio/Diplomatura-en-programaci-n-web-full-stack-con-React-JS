@@ -1,0 +1,167 @@
+/*font-family: 'Viga', sans-serif;*/
+/*font-family: 'Lalezar', cursive;*/
+
+
+
+body {
+    font-family: 'Viga', sans-serif;
+    /*color: rgb(255, 85, 85);*/
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*HEADER----------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e64a1;
+    padding: 10px 0;
+    border-bottom: 5px solid black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Lalezar', cursive;
+    color: rgb(0, 39, 65);
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+header img {
+    padding: 0 0 0 20px;
+    width: 70px;
+    height: auto;
+}
+
+.btn-contacto {
+    background-color: rgb(255, 85, 85);
+    border: 2px solid black;
+    /*background-color:rgb(255, 85, 85);*/
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/*FIN HEADER----------------------------------------------------*/
+
+
+/*==========NAVBAR----------------------------------------------*/
+
+nav {
+    margin-top: auto;
+    width: auto;
+    height: 30px;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a.activo {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(0, 39, 65);
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(0, 39, 65);
+    border-radius: 20px;
+}
+
+/*==========FIN NAVBAR----------------------------------------------*/
+
+
+/*====================MAIN------------------------------------------*/
+/*====================FIN MAIN------------------------------------------*/
+
+
+/*============================FOOTER------------------------------------*/
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+/*============================FIN FOOTER------------------------------------*/
+
+
+
+/*Responsive*/
+@media (max-width: 900px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      height: 120px;
+      width: auto;
+    }
+  
+    header h1 {
+      font-family: 'Lalezar', cursive;
+      color: rgb(0, 39, 65);
+      font-size: 50px;
+      margin-bottom: 0;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      margin-top: 20px;
+      width: 100%; /* Ajustar el ancho al 100% de la pantalla */
+      display: flex;
+      justify-content: space-around; /* Distribuir las secciones de manera uniforme */
+      overflow-x: auto; /* Agregamos scroll horizontal si es necesario */
+      height: 55px;
+    }
+  
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav ul li {
+        margin-left: 0px;
+        flex: 1; /* Distribuir el espacio disponible de manera uniforme */
+    }
+  
+    nav ul li a {
+      font-size: 15px;
+    }
+  }
+
+@media (max-width:440px){
+
+}
