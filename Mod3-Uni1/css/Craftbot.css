@@ -1,5 +1,6 @@
 /*font-family: 'Viga', sans-serif;*/
 /*font-family: 'Lalezar', cursive;*/
+/*font-family: 'Lilita One', cursive;*/
 
 
 
@@ -7,6 +8,7 @@ body {
     font-family: 'Viga', sans-serif;
     /*color: rgb(255, 85, 85);*/
     color: black;
+    background-color: rgb(143, 170, 220);
     font-size: 16px;
     line-height: 20px;
 }
@@ -18,7 +20,7 @@ header {
     align-items: center;
     background-color: #2e64a1;
     padding: 10px 0;
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
 }
 
 .logo {
@@ -95,6 +97,46 @@ nav ul li a:hover {
 
 
 /*====================MAIN------------------------------------------*/
+h2 {
+    color: #2e64a1;
+    font-weight: 400px;
+}
+
+.portada {
+    background-color: rgb(180, 199, 231);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.image_portada {
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_portada img {
+    max-width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.textos_portada {
+    flex-basis: 66.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.textos_portada p {
+    font-family: 'Lilita One', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
 /*====================FIN MAIN------------------------------------------*/
 
 
@@ -113,7 +155,7 @@ footer {
 
 
 /*Responsive*/
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     header {
       flex-direction: column;
       align-items: center;
