@@ -1,0 +1,499 @@
+/*font-family: 'Titillium Web', sans-serif;*/
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    /*color: rgb(255, 85, 85);*/
+    color: black;
+    background-color: rgb(244, 147, 54);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*HEADER----------------------------------------------------*/
+header {
+    height: 150px;
+    /* ajusta la altura según sea necesario */
+    background-color: rgb(21, 21, 21);
+    color: white;
+    font-family: 'Play', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente los elementos */
+    align-items: center;
+    /* centra verticalmente los elementos */
+    position: relative;
+    /* permite posicionar el rectángulo */
+}
+
+.circuloParaLogoBlanco {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.circuloParaLogoNegro {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(21, 21, 21);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuloParaLogoBlanco img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rectanguloParaLogo {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 150px);
+    /* mitad del ancho del círculo */
+    width: 300px;
+    height: 75px;
+    /* la mitad de la altura del header */
+    background-color: white
+}
+
+span {
+    color: white;
+    font-size: 50px;
+}
+
+/*FIN HEADER----------------------------------------------------*/
+
+
+
+/*==========NAVBAR----------------------------------------------*/
+nav {
+
+    background-color: white;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+
+}
+
+nav ul {
+    list-style: none;
+    /*para sacar los puntitos que hace el li*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+    /*Aumenta el ancho de un elemento que esta dentro de un display: flex*/
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 6px;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a.activo {
+    background-color: rgba(183, 182, 182, 0.938);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*==========FIN NAVBAR----------------------------------------------*/
+
+
+
+/*====================MAIN------------------------------------------*/
+main {
+    color: rgb(21, 21, 21);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/***HOME***/
+#homeBanner {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerTitulo {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.bannerDescripcion {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.banner-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#homeNosotros {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.nosotrosTitulo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(21, 21, 21);
+  }
+  
+  .nosotrosDescripcion{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(21, 21, 21);
+  }
+/***FIN HOME***/
+
+
+/***HISTORIA***/
+#historia {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+#historia .container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+  #historia h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(21, 21, 21);
+  }
+  
+  #historia p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(68, 68, 68);
+  }
+  
+  #fundadores {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #fundadores h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(21, 21, 21);
+  }
+  
+  .fundadores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+  
+  .fundador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fundador img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .fundador h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(21, 21, 21);
+  }
+  
+  .fundador p {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+  }
+/***FIN HISTORIA***/
+
+
+/**PRODUCTOS**/
+#productos {
+    background-color: #f0f0f0;
+    padding: 1px 40px 40px 40px;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(21, 21, 21);
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    flex-basis: calc(25% - 20px); /* Ajusta el tamaño de cada producto para que haya 4 por fila */
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(21, 21, 21);
+}
+
+.producto p {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    margin-bottom: 20px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-comprar:hover {
+    background-color: rgb(0, 0, 0);
+}
+/***FIN PRODUCTOS***/
+
+
+/***CONTACTO***/
+.contacto{
+    display: flex;
+    gap: 80px;
+    flex-basis: calc(50% - 10px);
+    background-color: #f0f0f0;
+    padding: 40px 25% 20px 25%;
+    text-align: center;
+}
+
+.contacto div{
+    width: 100%;
+}
+
+.datos p{
+    font-size: 14px;
+}
+
+.datos ul{
+    text-align: left;
+}
+
+.datos ul li{
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 80px; 
+}
+
+.formulario p input,
+.formulario p textarea{
+    width:  100%;
+}
+
+.formulario p input,
+.formulario p textarea{
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario p:nth-child(4){
+    align-items: start;
+}
+
+.formulario input[type="submit"]{
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 6.5rem;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: black;
+}
+/***FIN CONTACTO***/
+
+
+
+/***NIVELAB***/
+#niveLab {
+    background-color: #f2f2f2; /* Color de fondo original */
+    padding: 1px 40px 40px 40px;
+    text-align: center;
+  }
+  
+  
+  #niveLab h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(21, 21, 21);
+  }
+  
+  #niveLab .descripcion {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(68, 68, 68);
+    margin-bottom: 40px;
+  }
+  
+  .combos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .combo {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    flex-basis: calc(25% - 20px); /* Ajusta el tamaño de cada combo para que haya 4 por fila */
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .combo img {
+    width: 200px;
+    height: 310px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  
+  .combo h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(21, 21, 21);
+  }
+  
+  .combo p {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+  }
+  
+/***FIN NIVELAB***/
+
+/*====================FIN MAIN------------------------------------------*/
+
+
+
+/*============================FOOTER------------------------------------*/
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    
+}
+
+/*============================FIN FOOTER------------------------------------*/
