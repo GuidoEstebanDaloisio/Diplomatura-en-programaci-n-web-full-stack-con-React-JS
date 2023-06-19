@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte</title>
+</head>
+<body>
+    <script>
+        const distancia = parseInt(prompt('Ingrese la distancia:', ''));
+
+        if(0 < distancia && distancia <= 1000){
+            document.write('Lo mas apropiado sería ir a pie');
+        } else if (1000 < distancia && distancia <= 10000){
+            document.write('Lo mas apropiado sería ir en bicicleta');
+        } else if (10000 < distancia && distancia <= 30000){
+            document.write('Lo mas apropiado sería ir en colectivo');
+        } else if (30000 < distancia && distancia <= 100000){
+            document.write('Lo mas apropiado sería ir en auto');
+        } else if (100000 < distancia){
+            document.write('Lo mas apropiado sería ir en avión');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor Numero</title>
+</head>
+<body>
+    <script>
+        function obtenerNumeroMayor(array) {
+            let mayor = array[0]; // Suponemos que el primer elemento es el mayor
+
+            for (let i = 1; i < array.length; i++) {
+                if (array[i] > mayor) {
+                    mayor = array[i]; // Actualizamos el mayor si encontramos un número mayor en el array
+                }
+            }
+
+            return mayor;
+        }
+
+        const numerosStr = prompt("Ingresa los números separados por espacios:");
+        const numeros = numerosStr.split(" ").map(Number); // Convertir la cadena en un array de números
+
+        const numeroMayor = obtenerNumeroMayor(numeros);
+        document.write("El número mayor es:", numeroMayor);
+    </script>
+</body>
+</html>
