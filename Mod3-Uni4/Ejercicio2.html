@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar Caracteres</title>
+</head>
+
+<body>
+    <div>
+        <textarea id="mensaje" cols="30" rows="10"></textarea>
+        <div id="contador">No hay caracteres</div>
+    </div>
+
+    <script>
+        const mensaje = document.getElementById('mensaje');
+        const contador = document.getElementById('contador');
+
+        mensaje.addEventListener('input', function (e) {
+            const target = e.target;
+            const longitudAct = target.value.length;
+
+            if (longitudAct==0){
+                contador.innerHTML = `No hay caracteres`;
+            }
+            else{
+                contador.innerHTML = `Actualmente hay: ${longitudAct} caracteres`;
+            }
+        });
+    </script>
+</body>
+
+</html>

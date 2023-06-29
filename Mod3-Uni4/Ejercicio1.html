@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrados de colores</title>
+
+</head>
+
+<body>
+    <div id="cuadrado1" style="width: 100px; height: 100px; background-color:red; border: 2px solid crimson;"></div>
+    <div id="cuadrado2" style="width: 100px; height: 100px; background-color:green; border: 2px solid darkgreen;"></div>
+    <div id="cuadrado3" style="width: 100px; height: 100px; background-color:blue;  border: 2px solid darkblue"></div>
+
+    <script>
+
+        // Obtener los elementos cuadrado por su ID
+        var cuadrado1 = document.getElementById('cuadrado1');
+        var cuadrado2 = document.getElementById('cuadrado2');
+        var cuadrado3 = document.getElementById('cuadrado3');
+
+        // Función para cambiar el color de fondo del documento
+        function cambiarColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        // Asignar los eventos a los cuadrados
+        cuadrado1.addEventListener('click', function () {
+            cambiarColor('tomato');
+        });
+
+        cuadrado2.addEventListener('click', function () {
+            cambiarColor('greenyellow');
+        });
+
+        cuadrado3.addEventListener('click', function () {
+            cambiarColor('cornflowerblue');
+        });
+    </script>
+</body>
+
+</html>
